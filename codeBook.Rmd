@@ -1,0 +1,197 @@
+---
+title: "Codebook for tidySet"
+author: "Martin Mason"
+date: "30 July 2016"
+output: html_document
+---
+##General Information.
+This dataset has been creating by in two steps:
+1) To create a subset of the data with all columns containing the words "mean" or "std".
+2) To calculate the mean values based in the subjects or on the activity type.
+
+The data is gathered from merging the training and testing datsets from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+downloaded on 26 of july 2016 at 13:01.
+
+##Information about the source dataset
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
+
+###Column number,names & data type
+
+1 activity/subjects                    : chr  
+
+2 tbodyacc-mean()-x                    : num 
+
+3 tbodyacc-mean()-y                    : num 
+
+4 tbodyacc-mean()-z                    : num  
+
+5 tbodyacc-std()-x                     : num  
+
+6 tbodyacc-std()-y                     : num  
+
+7 tbodyacc-std()-z                     : num  
+
+8 tgravityacc-mean()-x                 : num  
+
+9 tgravityacc-mean()-y                 : num  
+
+10 tgravityacc-mean()-z                : num 
+
+11 tgravityacc-std()-x                 : num 
+
+12 tgravityacc-std()-y                 : num 
+
+13 tgravityacc-std()-z                 : num  
+
+14 tbodyaccjerk-mean()-x               : num  
+
+15 tbodyaccjerk-mean()-y               : num  
+
+16 tbodyaccjerk-mean()-z               : num  
+
+17 tbodyaccjerk-std()-x                : num  
+
+18 tbodyaccjerk-std()-y                : num  
+
+19 tbodyaccjerk-std()-z                : num  
+
+20 tbodygyro-mean()-x                  : num  
+
+21 tbodygyro-mean()-y                  : num  
+
+22 tbodygyro-mean()-z                  : num  
+
+23 tbodygyro-std()-x                   : num  
+
+24 tbodygyro-std()-y                   : num  
+
+25 tbodygyro-std()-z                   : num  
+
+26 tbodygyrojerk-mean()-x              : num  
+
+27 tbodygyrojerk-mean()-y              : num  
+
+28 tbodygyrojerk-mean()-z              : num  
+
+29 tbodygyrojerk-std()-x               : num  
+
+30 tbodygyrojerk-std()-y               : num  
+
+31 tbodygyrojerk-std()-z               : num  
+
+32 tbodyaccmag-mean()                  : num  
+
+33 tbodyaccmag-std()                   : num  
+
+34 tgravityaccmag-mean()               : num  
+
+35 tgravityaccmag-std()                : num  
+
+36 tbodyaccjerkmag-mean()              : num  
+
+37 tbodyaccjerkmag-std()               : num  
+
+38 tbodygyromag-mean()                 : num  
+
+39 tbodygyromag-std()                  : num  
+
+40 tbodygyrojerkmag-mean()             : num  
+
+41 tbodygyrojerkmag-std()              : num  
+
+42 fbodyacc-mean()-x                   : num  
+
+43 fbodyacc-mean()-y                   : num  
+
+44 fbodyacc-mean()-z                   : num  
+
+45 fbodyacc-std()-x                    : num  
+
+46 fbodyacc-std()-y                    : num  
+
+47 fbodyacc-std()-z                    : num  
+
+48 fbodyacc-meanfreq()-x               : num  
+
+49 fbodyacc-meanfreq()-y               : num  
+
+50 fbodyacc-meanfreq()-z               : num  
+
+51 fbodyaccjerk-mean()-x               : num  
+
+52 fbodyaccjerk-mean()-y               : num  
+
+53 fbodyaccjerk-mean()-z               : num  
+
+54 fbodyaccjerk-std()-x                : num  
+
+55 fbodyaccjerk-std()-y                : num  
+
+56 fbodyaccjerk-std()-z                : num  
+
+57 fbodyaccjerk-meanfreq()-x           : num   
+
+58 fbodyaccjerk-meanfreq()-y           : num  
+
+59 fbodyaccjerk-meanfreq()-z           : num  
+
+60 fbodygyro-mean()-x                  : num  
+
+61 fbodygyro-mean()-y                  : num  
+
+62 fbodygyro-mean()-z                  : num  
+
+63 fbodygyro-std()-x                   : num  
+
+64 fbodygyro-std()-y                   : num  
+
+65 fbodygyro-std()-z                   : num  
+
+66 fbodygyro-meanfreq()-x              : num  
+
+67 fbodygyro-meanfreq()-y              : num  
+
+68 fbodygyro-meanfreq()-z              : num  
+
+69 fbodyaccmag-mean()                  : num  
+
+70 fbodyaccmag-std()                   : num  
+
+71 fbodyaccmag-meanfreq()              : num  
+
+72 fbodybodyaccjerkmag-mean()          : num  
+
+73 fbodybodyaccjerkmag-std()           : num 
+
+74 fbodybodyaccjerkmag-meanfreq()      : num  
+
+75 fbodybodygyromag-mean()             : num  
+
+76 fbodybodygyromag-std()              : num  
+
+77 fbodybodygyromag-meanfreq()         : num  
+
+78 fbodybodygyrojerkmag-mean()         : num  
+
+79 fbodybodygyrojerkmag-std()          : num 
+
+80 fbodybodygyrojerkmag-meanfreq()     : num 
+
+81 angle(tbodyaccmean,gravity)         : num 
+
+82 angle(tbodyaccjerkmean),gravitymean): num 
+
+83 angle(tbodygyromean,gravitymean)    : num 
+
+84 angle(tbodygyrojerkmean,gravitymean): num 
+
+85 angle(x,gravitymean)                : num 
+
+86 angle(y,gravitymean)                : num 
+
+87 angle(z,gravitymean)                : num 
+
+
+
