@@ -29,7 +29,7 @@ The script does the following:
 8) Manually turn vector indices [1,2] to TRUE to include the subject and activity columns
 9) Merges the two logical vectors to one, where TRUE in any of them becomes TRUE in the merged vector(primaryIndex)
 10) Using the primaryIndex to select out all relevant columns adding the to the new dataset(mySubset)
-11) Altering all columns names to lowercase
+11) Tidying names, removing uppercase, std = standarddeviation removin parentheses etc.
 12) Adding the type of activity to a string instead of a number coding for activity
 13) Grouping columns based on activity
 14) Calculating colMeans of these groups and binding them together to tidyActivity

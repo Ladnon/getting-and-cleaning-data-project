@@ -63,6 +63,12 @@ meanSubset <- completeSet[,primaryIndex]
         ####All column names to lower case
 newNames <- names(meanSubset)
 newNames <- tolower(newNames)
+        ####Substituting -mean with mean and -std with standarddeviation, also
+        ####removing parentheses
+newNames <- gsub('-mean', 'mean', newNames)
+newNames <- gsub('-std', 'standarddeviation',newNames)
+newNames <- gsub('[-()]', '', newNames)
+
 
         ####Adding the tidied column names to data frame
 names(meanSubset) <- newNames
@@ -117,7 +123,7 @@ walking_upstairs <- filter(dplyrVersion, activity == "walking_upstairs")
 walking_upstairs <- walking_upstairs[,3:ncol(walking_upstairs)]
 walking_upstairs <- colMeans(walking_upstairs,na.rm = TRUE)
 
-####Merging the mean values of each of the activities tofether and adding a column with
+####Merging the mean values of each of the activities together and adding a column with
 ###the activity specified.
 
 tidyActivity <- rbind(standing, sitting, laying, walking, walking_downstairs, walking_upstairs)
