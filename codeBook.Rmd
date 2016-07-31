@@ -17,95 +17,183 @@ The experiments have been carried out with a group of 30 volunteers within an ag
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 ###About the dataset
+
 This dataset containg the means of all variables in the different measurement,
 they are grouped as the mean of all data grouped by activity and afterwards the means
 of all the measurements for each subject.
+The x, y or z indicates which axis the measurement is on.
 ###Column number,names & data type
 
-1 activity/subjects                     : chr 
+1 activity/subjects                     : chr
+
 2 tbodyaccmeanx                         : num 
+
 3 tbodyaccmeany                         : num 
+
 4 tbodyaccmeanz                         : num 
+
 5 tbodyaccstandarddeviationx            : num 
+
 6 tbodyaccstandarddeviationy            : num 
+
 7 tbodyaccstandarddeviationz            : num 
+
 8 tgravityaccmeanx                      : num 
+
 9 tgravityaccmeany                      : num 
+
 10 tgravityaccmeanz                     : num 
+
 11 tgravityaccstandarddeviationx        : num 
+
 12 tgravityaccstandarddeviationy        : num 
+
 13 cctgravityaccstandarddeviationz      : num
+
 14 tbodyaccjerkmeanx                    : num
+
 15 tbodyaccjerkmeany                    : num
+
 16 tbodyaccjerkmeanz                    : num
+
 17 tbodyaccjerkstandarddeviationx       : num
+
 18 tbodyaccjerkstandarddeviationy       : num
+
 19 tbodyaccjerkstandarddeviationz       : num
+
 20 tbodygyromeanx                       : num
+
 21 tbodygyromeany                       : num
+
 22 tbodygyromeanz                       : num
+
 23 tbodygyrostandarddeviationx          : num
+
 24 tbodygyrostandarddeviationy          : num
+
 25 tbodygyrostandarddeviationz          : num
+
 26 tbodygyrojerkmeanx                   : num
+
 27 tbodygyrojerkmeany                   : num
+
 28 tbodygyrojerkmeanz                   : num
+
 29 tbodygyrojerkstandarddeviationx      : num
+
 30 tbodygyrojerkstandarddeviationy      : num
+
 31 tbodygyrojerkstandarddeviationz      : num
+
 32 tbodyaccmagmean                      : num
+
 33 tbodyaccmagstandarddeviation         : num
+
 34 tgravityaccmagmean                   : num
+
 35 tgravityaccmagstandarddeviation      : num
+
 36 tbodyaccjerkmagmean                  : num
+
 37 tbodyaccjerkmagstandarddeviation     : num
+
 38 tbodygyromagmean                     : num
+
 39 tbodygyromagstandarddeviation        : num
+
 40 tbodygyrojerkmagmean                 : num
+
 41 tbodygyrojerkmagstandarddeviation    : num
+
 42 fbodyaccmeanx                        : num
+
 43 fbodyaccmeany                        : num
+
 44 fbodyaccmeanz                        : num
+
 45 fbodyaccstandarddeviationx           : num
+
 46 fbodyaccstandarddeviationy           : num
+
 47 fbodyaccstandarddeviationz           : num
+
 48 fbodyaccmeanfreqx                    : num
+
 49 fbodyaccmeanfreqy                    : num
+
 50 fbodyaccmeanfreqz                    : num
+
 51 fbodyaccjerkmeanx                    : num
+
 52 fbodyaccjerkmeany                    : num
+
 53 fbodyaccjerkmeanz                    : num
+
 54 fbodyaccjerkstandarddeviationx       : num
+
 55 fbodyaccjerkstandarddeviationy       : num
+
 56 fbodyaccjerkstandarddeviationz       : num
+
 57 fbodyaccjerkmeanfreqx                : num
+
 58 fbodyaccjerkmeanfreqy                : num
+
 59 fbodyaccjerkmeanfreqz                : num
+
 60 fbodygyromeanx                       : num
+
 61 fbodygyromeany                       : num
+
 62 fbodygyromeanz                       : num
+
 63 fbodygyrostandarddeviationx          : num
+
 64 fbodygyrostandarddeviationy          : num
+
 65 fbodygyrostandarddeviationz          : num
+
 66 fbodygyromeanfreqx                   : num
+
 67 fbodygyromeanfreqy                   : num
+
 68 fbodygyromeanfreqz                   : num
+
 69 fbodyaccmagmean                      : num
+
 70 fbodyaccmagstandarddeviation         : num
+
 71 fbodyaccmagmeanfreq                  : num
+
 72 fbodybodyaccjerkmagmean              : num
+
 73 fbodybodyaccjerkmagstandarddeviation : num
+
 74 fbodybodyaccjerkmagmeanfreq          : num
+
 75 fbodybodygyromagmean                 : num
+
 76 fbodybodygyromagstandarddeviation    : num
+
 77 fbodybodygyromagmeanfreq             : num
+
 78 fbodybodygyrojerkmagmean             : num
+
 79 fbodybodygyrojerkmagstandarddeviation: num
+
 80 fbodybodygyrojerkmagmeanfreq         : num
+
 81 angletbodyaccmean,gravity            : num
+
 82 angletbodyaccjerkmean,gravitymean    : num
+
 83 angletbodygyromean,gravitymean       : num
+
 84 angletbodygyrojerkmean,gravitymean   : num
+
 85 anglex,gravitymean                   : num
+
 86 angley,gravitymean                   : num
+
 87 anglez,gravitymean                   : num
